@@ -21,8 +21,8 @@ prefix=\`${prefix}\`
 
 Others
 
-${prefix}\`help\`      ${prefix}\`ping\` 
-${prefix}\`prefix\`    ${prefix}\`uptime\`
+\`${prefix}help\`      \`${prefix}ping\` 
+\`${prefix}prefix\`    \`${prefix}uptime\`
 
 Music
 
