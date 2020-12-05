@@ -6,7 +6,7 @@ const {
 } = require(`../config.json`);
 
 module.exports = {
-  name: `botlist`,
+  name: `botlistnnnn`,
   description: `Gives you the botlists of the Bot`,
   aliases: [],
   cooldown: 3,
