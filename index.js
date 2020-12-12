@@ -14,44 +14,20 @@ client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
-//this fires when the BOT STARTS DO NOT TOUCH
-client.on(`ready`, () => {	
 
-   
-   ///////////////////////////////
-    ////////////IFCHEMPTY//////////
-        //remove everything in between those 2 big comments if you want to disable that the bot leaves when ch. or queue gets empty!
-        setInterval(() => { 
-          let member;
-        client.guilds.cache.forEach(async guild =>{
-        await delay(15);
-          member = await client.guilds.cache.get(guild.id).members.cache.get(client.user.id)
-        //if not connected
-          if(!member.voice.channel)
-          return;
-        //if alone 
-        if (member.voice.channel.members.size === 1) 
-        { return member.voice.channel.leave(); }
-      });
-      
+client.on("ready", () => {
+setInterval(() => {
+console.log(`${client.user.username} ready! ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
+client.user.setActivity(`${PREFIX}help ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
 
-  client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"}); }, 
+}, 15000);
 
-
-(5000));
-      ////////////////////////////////
-      ////////////////////////////////
-    figlet.text(`${client.user.username} ready!`, function (err, data) {
-      if (err) {
-          console.log('Something went wrong');
-          console.dir(err);
-      }
-      console.log(`═════════════════════════════════════════════════════════════════════════════`);
-      console.log(data)
-      console.log(`═════════════════════════════════════════════════════════════════════════════`);
-    })
-   
 });
+client.on("warn", (info) => console.log(info));
+client.on("error", console.error);
+
+
+
 //DO NOT TOUCH
 client.on(`warn`, (info) => console.log(info));
 //DO NOT TOUCH
