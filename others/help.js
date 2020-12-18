@@ -11,11 +11,12 @@ module.exports = {
     let commands = message.client.commands.array();
      
     let helpEmbed = new MessageEmbed()
-    .setFooter('TEST');
+    .setFooter(message.author.username, message.author.displayAvatarURL)
     .setColor('RANDOM')
     .setTitle("**__Help__**")
-  .setImage( "https://cdn.discordapp.com/attachments/766626265448316938/782382346933501962/image0.gif")
-  .setDescription(`**
+  .setImage( "https://cdn.discordapp.com/attachments/763546223952789554/784580521681747968/image0.gif")
+  .setDescription(`**[  SUPPORT  ](https://discord.gg/BgFvGtX5p8)**   -   **[   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=782206819728228382&permissions=1878523713&scope=bot)
+
 prefix=\`${prefix}\`
 
 Others
@@ -30,7 +31,6 @@ Music
 \`${prefix}resume (r)\`-\`${prefix}search\`-\`${prefix}shuffle(mix)\`-\`${prefix}skip(s)\`-\`${prefix}skipto(st)\`-\`${prefix}stop\`
 \`${prefix}volume(vol)\`
 
-[  SUPPORT  ](https://discord.gg/BgFvGtX5p8)**   -   **[   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=782206819728228382&permissions=1677197121&scope=bot)
 
 **`)
     
