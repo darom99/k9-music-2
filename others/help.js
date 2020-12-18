@@ -11,7 +11,7 @@ module.exports = {
     let commands = message.client.commands.array();
      
     let helpEmbed = new MessageEmbed()
-    .setFooter('TEST')
+    .setFooter(const prefix = ("*"));
     .setColor('RANDOM')
     .setTitle("**__Help__**")
   .setImage( "https://cdn.discordapp.com/attachments/766626265448316938/782382346933501962/image0.gif")
