@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 
-  const prefix = ("*");
+  const prefix = ("_");
   
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setColor('RANDOM')
     .setTitle("**__Help__**")
-  .setImage( "https://discord.com/api/oauth2/authorize?client_id=792369278103453709&permissions=3209984&scope=bot")
+  .setImage( "https://cdn.discordapp.com/attachments/792368491877498890/792512314620116992/image0.gif")
   .setDescription(`**[  SUPPORT  ](https://discord.gg/BgFvGtX5p8)**   -   **[   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=792369278103453709&permissions=3209984&scope=bot)
 
 prefix=\`${prefix}\`
