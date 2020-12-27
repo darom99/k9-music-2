@@ -32,7 +32,7 @@ Music
 \`${prefix}volume(vol)\`
 
 
-__`)
+`)
     
 
     helpEmbed.setTimestamp();
